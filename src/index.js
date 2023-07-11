@@ -114,9 +114,11 @@ function Footer() {
 
   if (!isOpen)
     return (
-      <p>
-        We're happy to welcome you between {openHour}:00 to {closeHour}:00
-      </p>
+      <footer className="footer">
+        <p>
+          We're happy to welcome you between {openHour}:00 to {closeHour}:00
+        </p>
+      </footer>
     );
 
   return (
@@ -130,7 +132,6 @@ function Footer() {
       )}
     </footer>
   );
-  // return React.createElement('footer', null, "We're currently open!");
 }
 
 function Order({ closeHour, openHour }) {
